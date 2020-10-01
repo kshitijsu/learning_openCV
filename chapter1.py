@@ -37,3 +37,6 @@ while True:
     cv2.imshow('Video', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+# release cap object and destroy all windows
+cap.release() 
+cv2.destroyAllWindows() 
